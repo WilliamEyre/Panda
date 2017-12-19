@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f539e">
+
+        <ImageView
+            android:id="@+id/personal_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/personal_back_img"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_panda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="熊猫直播"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/panda_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            android:src="@drawable/panda_sign" />
+
+        <ImageView
+            android:id="@+id/hudong_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/person_sign"
+            android:src="@drawable/hudong_sign" />
+
+        <ImageView
+            android:id="@+id/person_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/person_sign"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:text="注册"/>
+    </RelativeLayout>
+
+</LinearLayout>

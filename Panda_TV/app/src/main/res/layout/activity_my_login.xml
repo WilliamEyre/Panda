@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EBEF">
+
+    <com.example.mypandatv.ui.MyTitleLayout
+        android:id="@+id/myTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.mypandatv.ui.MyTitleLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="使用社交账号登陆到熊猫频道"
+        android:textColor="#1f539e" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_WeiXin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/login_weixin"
+                android:gravity="center"
+                android:text="微信"
+                android:textSize="11dp" />
+
+            <RadioButton
+                android:id="@+id/rb_QQ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/login_qq"
+                android:gravity="center"
+                android:text="QQ"
+                android:textSize="11dp" />
+
+            <RadioButton
+                android:id="@+id/rb_WeiBo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/login_sina"
+                android:gravity="center"
+                android:text="微博"
+                android:textSize="11dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="CNTV通行证"
+        android:textColor="#1f539e" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_mylogin_edit"
+        android:hint="账号：请输入邮箱或手机号"
+        android:padding="5dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#D0D0D0"
+        android:textCursorDrawable="@drawable/mylogin_guangbiao"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/hint_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ff0000" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_mylogin_edit"
+        android:hint="请输入密码"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textColorHint="#D0D0D0"
+        android:textCursorDrawable="@drawable/mylogin_guangbiao"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/hint_password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ff0000" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:autoLink="all"
+            android:text="忘记密码？"
+            android:textSize="12sp"
+            android:textColor="#1f539e" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_mylogin_btn"
+        android:text="登陆"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+</LinearLayout>

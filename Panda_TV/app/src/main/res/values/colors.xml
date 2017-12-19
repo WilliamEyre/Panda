@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPoint">#9FCDEC</color>
+    <color name="colorBackground">#1f539e</color>
+    <color name="setting_common_bg">#f6f6f6</color>
+    <color name="title_bar_title_color">#404f64</color>
+    <color name="setting_divider_line_bg">#c2c2c2</color>
+    <color name="black">#353535</color>
+    <color name="transparent">#00000000</color> <!-- 透明 -->
+</resources>

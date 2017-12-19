@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.youth.banner.Banner
+        android:id="@+id/flybanner_home"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        app:indicator_drawable_selected="@color/colorPoint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/lv_splendid_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6EBEF" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_splendid_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_pandaObserve"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="熊猫观察"
+            android:textColor="#3465a5"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6EBEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_pandaObserve"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="5dp"
+                android:src="@drawable/tab_panda_observe_button" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_title_pandaObserve"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/hometv_pandaoberve"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="新生"
+                        android:textColor="#ff115e"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_content_pandaObserve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textSize="12sp"
+                        android:text="51423123"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CACACA"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_title2_pandaObserve"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/hometv_pandaoberve"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="新生"
+                        android:textColor="#ff115e"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_content2_pandaObserve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textSize="12sp"
+                        android:text="51423123"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_home_PandaObserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_PandaLive"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="熊猫直播"
+            android:textColor="#3465a5"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6EBEF" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_PandaLive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_WallLive"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="长城直播"
+            android:textColor="#3465a5"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6EBEF" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_WallLive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_LiveChina"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="直播中国"
+            android:textColor="#3465a5"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6EBEF" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_LiveChina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_Interactive_title"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="特别策划"
+            android:textColor="#3465a5"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6EBEF" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img_Interactive"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:id="@+id/tv_Interactive_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="151212"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_CCTV"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="CCTV"
+            android:textColor="#3465a5"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6EBEF" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_CCTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tv_ShadowChina"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:textColor="#3465a5"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

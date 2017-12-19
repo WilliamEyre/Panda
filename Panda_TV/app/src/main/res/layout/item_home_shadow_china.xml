@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_homeShadowChina"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6EBEF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:id="@+id/img_homeShadowChina"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY" />
+
+            <RadioButton
+                android:id="@+id/rb_homeShadowChina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@drawable/lpanda_bottom_gra"
+                android:button="@null"
+                android:drawableLeft="@drawable/home_play_icon"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="01:48"
+                android:textColor="#fff" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_homeShadowChina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="121212"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_daytime_homeShadowChina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="121212"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

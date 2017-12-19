@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <FrameLayout
+        android:layout_width="130dp"
+        android:layout_height="75dp">
+        <ImageView
+            android:id="@+id/img_homePandaLive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_loading_rotate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:button="@null"
+            android:text="Live"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="@drawable/lpanda_bottom_gra"
+            android:drawableLeft="@drawable/lpanda_live_layer" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_homePandaLive"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:text="123132"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

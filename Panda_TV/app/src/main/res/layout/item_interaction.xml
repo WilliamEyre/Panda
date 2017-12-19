@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/line_interaction"
+    android:layout_margin="15dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv_interaction"
+        android:textSize="18sp"
+        android:textColor="#3465a5"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ADADAD"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/img_interaction"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

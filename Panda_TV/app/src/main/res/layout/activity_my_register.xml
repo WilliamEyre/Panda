@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EBEF">
+
+    <com.example.mypandatv.ui.MyTitleLayout
+        android:id="@+id/myTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_myRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        app:tabTextColor="#000"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/colorBackground"
+        app:tabIndicatorColor="@color/colorBackground"
+        android:background="#fff"/>
+
+    <com.example.mypandatv.ui.home.personsign.viewpage.MyViewPage
+        android:id="@+id/vp_myRegister"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
